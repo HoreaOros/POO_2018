@@ -38,9 +38,12 @@ namespace ContBancar
                 
         }
 
-        internal void PrintTranzactii()
+        public void PrintTranzactii()
         {
-            throw new NotImplementedException();
+            foreach (var item in miscari)
+            {
+                Console.WriteLine(item);
+            }
         }
 
         public void Depune(decimal suma)

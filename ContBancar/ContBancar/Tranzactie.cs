@@ -31,6 +31,10 @@ namespace ContBancar
                 success = value;
             }
         }
+        public override string ToString()
+        {
+            return data.ToString() + "/" + tip + "/" + suma + "/" + "Success = " + success;
+        }
     }
 
     enum TransactionType
