@@ -9,6 +9,8 @@ namespace ContBancar
         private List<Tranzactie> miscari = new List<Tranzactie>();
         private string titular;
         private decimal sold;
+        private readonly static float dobanda = 0.07f;
+
         public Cont(string titular, decimal sold)
         {
             this.titular = titular;
@@ -70,6 +72,14 @@ namespace ContBancar
             Console.WriteLine("Cont: < >");
             Console.WriteLine("\tTitular: {0}", titular);
             Console.WriteLine("\tSold: {0}", sold);
+            Console.WriteLine("\tDobanda: {0}", dobanda);
+        }
+        public float Dobanda
+        {
+            get
+            {
+                return dobanda;
+            }
         }
     }
 }
