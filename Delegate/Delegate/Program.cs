@@ -12,7 +12,9 @@ namespace Delegate
         {
             C c = new C();
 
-            c.Compute(1, 2, C.Diff);
+            C.Op d = new C.Op(C.Diff);
+
+            c.Compute(1, 2, d);
 
             C.Func f = C.Dublu;
             f += C.Triplu;

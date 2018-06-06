@@ -16,7 +16,6 @@ namespace Delegate
             {
                 Console.WriteLine(del(x, y));
             }
-            
         }
 
         public static int Sum(int x, int y)
